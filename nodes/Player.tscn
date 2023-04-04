@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://du0sfcfwehdg8"]
+
+[ext_resource type="Script" path="res://nodes/Player.gd" id="1_qv2dd"]
+[ext_resource type="Texture2D" uid="uid://du8xk0l8bx35b" path="res://sprites/triberium_16px.png" id="2_3882j"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_54cta"]
+radius = 2.0
+height = 14.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_qv2dd")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -5)
+texture = ExtResource("2_3882j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_54cta")
+disabled = true
