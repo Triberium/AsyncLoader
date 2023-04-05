@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const MAX_SPEED := 500
+const MAX_SPEED := 250
 const ACCELERATION := 500
 const ZOOM_DELTA := Vector2(0.05, 0.05)
 
